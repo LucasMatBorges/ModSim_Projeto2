@@ -18,10 +18,10 @@ Lr = 0.001   # Espessura do recipiente (m)
 """Equações diferenciais
    Calcula variação de temperatura dos estoques"""
 def func(A, t):
-    dAdt = ( (Tinf - A) / (Ma*Ca) ) * ( (H*Kr*Ar) / ( (H*Lr) + Kr) ) * ( ( (H*Lr) + Kr) / (H*Lr) )
+    dAdt = ( (Tinf - A) / (Ma*Ca) ) * ( (H*Kr*Ar) / ( (H*Lr) + Kr) )
     return dAdt
 
-T = linspace(0,3600,3601)
+T = linspace(0,100000,100001)
 
 
 Y = odeint(func, A0, T)
