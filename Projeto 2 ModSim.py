@@ -1,3 +1,5 @@
+# Implementação do modelo
+
 from scipy.integrate import odeint
 from numpy import linspace
 import matplotlib.pyplot as plt
@@ -44,11 +46,6 @@ plt.show()
 
 
 # Gráfico matador
-
-
-
-
-
 
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint 
